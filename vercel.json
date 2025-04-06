@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "backend/jigyasa_backend/wsgi.py",
+        "src": "BackEnd/jigyasa_backend/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "50mb" }
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "backend/jigyasa_backend/wsgi.py"
+        "dest": "BackEnd/jigyasa_backend/wsgi.py"
       }
     ]
   }
